@@ -10,7 +10,7 @@ class EventName extends \Pmc\ObjectLib\BasicString
 
     public function __construct(string $value)
     {
-        parent::__construct($value, false, 512);
+        parent::__construct($value, false, 255);
     }
 
 }
