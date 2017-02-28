@@ -1,18 +1,18 @@
 <?php
+
 namespace Pmc\EventSourceLib\Event;
 
-use Pmc\ {
+use Pmc\{
     EventSourceLib\Aggregate\AggregateId,
     Session\Session
 };
-
-
 
 /**
  * @author Paul Court <emails@paulcourt.co.uk>
  */
 abstract class AbstractEvent implements AggregateEvent
 {
+
     private $aggregateId;
     private $session;
     private $eventId;
@@ -41,11 +41,16 @@ abstract class AbstractEvent implements AggregateEvent
         return $this->timestamp;
     }
 
+    public function session()
+    {
+        return $this->session;
+    }
+
     public function toArray(): array
     {
         return [
-            'eventId' => (string)$this->eventId(),
-            'aggregateId' => (string)$this->aggregateId(),
+            'eventId' => (string) $this->eventId(),
+            'aggregateId' => (string) $this->aggregateId(),
             'timestamp' => $this->timestamp(),
             'session' => $this->session->toArray()
         ];
@@ -56,8 +61,9 @@ abstract class AbstractEvent implements AggregateEvent
         $instance = new static();
         $instance->eventId = EventId::fromString($data['eventId']);
         $instance->aggregateId = AggregateId::fromString($data['aggregateId']);
-        $instance->timestamp = (float)$data['timestamp'];
+        $instance->timestamp = (float) $data['timestamp'];
         $instance->session = Session::fromArray($data['session']);
         return $instance;
     }
+
 }
