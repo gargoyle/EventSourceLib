@@ -1,6 +1,6 @@
 <?php
 
-namespace Pmc\EventSourceLib;
+namespace Pmc\EventSourceLib\Event;
 
 /**
  * @author Gargoyle <g@rgoyle.com>

@@ -17,9 +17,11 @@
         "psr-4": { 
             "Pmc\\EventSourceLib\\Tests\\": "tests/" }
     },
+    "minimum-stability":"dev",
     "require": {
         "php": "^7.1",
-        "pmc/objectlib": "dev-master"
+        "pmc/objectlib": "dev-master",
+        "pmc/session": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
