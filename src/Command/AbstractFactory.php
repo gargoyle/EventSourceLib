@@ -10,8 +10,8 @@ use Psr\Log\LoggerInterface;
  */
 abstract class AbstractFactory
 {
-    private $session;
-    private $logger;
+    protected $session;
+    protected $logger;
 
     public function __construct(Session $session, LoggerInterface $logger)
     {
