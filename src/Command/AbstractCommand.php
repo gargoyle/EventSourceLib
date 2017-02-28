@@ -2,7 +2,7 @@
 
 namespace Pmc\EventSourceLib\Command;
 
-use Pmc\{
+use Pmc\ {
     EventSourceLib\Aggregate\AggregateId,
     Session\Session
 };
@@ -34,7 +34,7 @@ abstract class AbstractCommand implements AggregateCommand
         return $this->session;
     }
 
-    public function aggregateId()
+    public function aggregateId(): AggregateId
     {
         return $this->aggregateId;
     }
