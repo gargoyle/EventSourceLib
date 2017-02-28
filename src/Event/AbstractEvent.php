@@ -41,7 +41,7 @@ abstract class AbstractEvent implements AggregateEvent
         return $this->timestamp;
     }
 
-    public function session()
+    public function session(): Session
     {
         return $this->session;
     }
