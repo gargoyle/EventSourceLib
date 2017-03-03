@@ -13,10 +13,10 @@ use Pmc\{
 abstract class AbstractEvent implements AggregateEvent
 {
 
-    private $aggregateId;
-    private $session;
-    private $eventId;
-    private $timestamp;
+    protected $aggregateId;
+    protected $session;
+    protected $eventId;
+    protected $timestamp;
 
     public function __construct(Session $session, AggregateId $aggregateId)
     {
