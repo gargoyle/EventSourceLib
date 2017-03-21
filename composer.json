@@ -1,7 +1,7 @@
 {
     "name": "pmc/eventsourcelib",
     "description": "An extension to pmc/objectlib with extensions specifically relating to CQRS and Event Sourcing.",
-    
+
     "authors": [
         {
             "name": "Gargoyle",
@@ -14,14 +14,13 @@
         }
     },
     "autoload-dev": {
-        "psr-4": { 
+        "psr-4": {
             "Pmc\\EventSourceLib\\Tests\\": "tests/" }
     },
-    "minimum-stability":"dev",
     "require": {
         "php": "^7.1",
-        "pmc/objectlib": "dev-master",
-        "pmc/session": "dev-master"
+        "pmc/objectlib": "0.5",
+        "pmc/session": "0.5"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
