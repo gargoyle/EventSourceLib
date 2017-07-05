@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a983273615e2657b0feec43313013e4",
+    "content-hash": "f3d167477501bcf1f0605522039ba518",
     "packages": [
         {
             "name": "paragonie/random_compat",
@@ -92,16 +92,16 @@
         },
         {
             "name": "pmc/objectlib",
-            "version": "v0.7",
+            "version": "v0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gargoyle/ObjectLib.git",
-                "reference": "398638780b032cb8a1ee277f9917449b440098e8"
+                "reference": "2674449223fd64285b0a8c6dac77bab951f654ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gargoyle/ObjectLib/zipball/398638780b032cb8a1ee277f9917449b440098e8",
-                "reference": "398638780b032cb8a1ee277f9917449b440098e8",
+                "url": "https://api.github.com/repos/gargoyle/ObjectLib/zipball/2674449223fd64285b0a8c6dac77bab951f654ca",
+                "reference": "2674449223fd64285b0a8c6dac77bab951f654ca",
                 "shasum": ""
             },
             "require": {
@@ -114,7 +114,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Pmc\\ObjectLib\\": "src/"
+                    "Pmc\\ObjectLib\\": "src/Pmc/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -125,7 +125,7 @@
                 }
             ],
             "description": "A collection of mostly value objects and other simple classes which I find myself using over and over again in different projects.",
-            "time": "2017-06-26T07:57:17+00:00"
+            "time": "2017-07-05T07:36:24+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -849,16 +849,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "3.4.3",
+            "version": "3.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "3ab72b65b39b491e0c011e2e09bb2206c2aa8e24"
+                "reference": "a23b761686d50a560cc56233b9ecf49597cc9118"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/3ab72b65b39b491e0c011e2e09bb2206c2aa8e24",
-                "reference": "3ab72b65b39b491e0c011e2e09bb2206c2aa8e24",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/a23b761686d50a560cc56233b9ecf49597cc9118",
+                "reference": "a23b761686d50a560cc56233b9ecf49597cc9118",
                 "shasum": ""
             },
             "require": {
@@ -904,7 +904,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2016-12-08T20:27:08+00:00"
+            "time": "2017-06-30T09:13:00+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -1421,16 +1421,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.3.2",
+            "version": "v3.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "9752a30000a8ca9f4b34b5227d15d0101b96b063"
+                "reference": "1f93a8d19b8241617f5074a123e282575b821df8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/9752a30000a8ca9f4b34b5227d15d0101b96b063",
-                "reference": "9752a30000a8ca9f4b34b5227d15d0101b96b063",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/1f93a8d19b8241617f5074a123e282575b821df8",
+                "reference": "1f93a8d19b8241617f5074a123e282575b821df8",
                 "shasum": ""
             },
             "require": {
@@ -1472,7 +1472,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-02T22:05:06+00:00"
+            "time": "2017-06-15T12:58:50+00:00"
         },
         {
             "name": "webmozart/assert",
