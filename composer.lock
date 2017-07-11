@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f3d167477501bcf1f0605522039ba518",
+    "content-hash": "f216eaf12e60265e25cdab85a003ba71",
     "packages": [
         {
             "name": "paragonie/random_compat",
@@ -92,16 +92,16 @@
         },
         {
             "name": "pmc/objectlib",
-            "version": "v0.8",
+            "version": "v0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gargoyle/ObjectLib.git",
-                "reference": "2674449223fd64285b0a8c6dac77bab951f654ca"
+                "reference": "2b5991f021cb1b6b0914759798d8744fbb46cef0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gargoyle/ObjectLib/zipball/2674449223fd64285b0a8c6dac77bab951f654ca",
-                "reference": "2674449223fd64285b0a8c6dac77bab951f654ca",
+                "url": "https://api.github.com/repos/gargoyle/ObjectLib/zipball/2b5991f021cb1b6b0914759798d8744fbb46cef0",
+                "reference": "2b5991f021cb1b6b0914759798d8744fbb46cef0",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +125,7 @@
                 }
             ],
             "description": "A collection of mostly value objects and other simple classes which I find myself using over and over again in different projects.",
-            "time": "2017-07-05T07:36:24+00:00"
+            "time": "2017-07-05T22:45:36+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -1421,7 +1421,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.3.3",
+            "version": "v3.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
