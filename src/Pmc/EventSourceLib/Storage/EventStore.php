@@ -69,8 +69,8 @@ abstract class EventStore
         $rawStream = $this->storageEngine->getSerialisedStream($streamId);
         foreach ($rawStream as $serialisedEventRecord) {
             $domainEventClass = $this->eventNameMapper->getClassForName($serialisedEventRecord['eventName']);
-            $domainEvent = $domainEventClass::fromArray(json_decode($serialisedEventRecord['eventData']), true);
-            $streamEvent = new StreamEvent($serialisedEventRecord['streamId'], $serialisedEventRecord['streamSeq'], $domainEvent);
+            $domainEvent = $domainEventClass::fromArray(json_decode($serialisedEventRecord['eventData'], true));
+            $streamEvent = new StreamEvent(Id::fromString($serialisedEventRecord['streamId']), $serialisedEventRecord['streamSeq'], $domainEvent);
             $eventStream->addEvent($streamEvent);
         }
         return $eventStream;
