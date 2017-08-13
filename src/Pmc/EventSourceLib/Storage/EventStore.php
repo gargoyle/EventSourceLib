@@ -5,7 +5,7 @@ namespace Pmc\EventSourceLib\Storage;
 use Pmc\EventSourceLib\Event\EventStream;
 use Pmc\EventSourceLib\Event\StreamEvent;
 use Pmc\MessageBus\MessageBus;
-use Pmc\ObjectLib\ClassMap;
+use Pmc\ObjectLib\ClassNameMap;
 use Pmc\ObjectLib\Id;
 
 /**
@@ -20,7 +20,7 @@ abstract class EventStore
 {
 
     /**
-     * @var ClassMap
+     * @var ClassNameMap
      */
     private $eventNameMapper;
 
@@ -35,7 +35,7 @@ abstract class EventStore
     private $storageEngine;
 
     
-    public function __construct(StorageEngine $storageEngine, MessageBus $messageBus, ClassMap $eventNameMapper)
+    public function __construct(StorageEngine $storageEngine, MessageBus $messageBus, ClassNameMap $eventNameMapper)
     {
         $this->storageEngine = $storageEngine;
         $this->messageBus = $messageBus;
