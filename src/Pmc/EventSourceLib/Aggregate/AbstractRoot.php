@@ -37,7 +37,7 @@ abstract class AbstractRoot
     protected function applyEvents(EventStream $events)
     {
         foreach ($events as $event) {
-            $this->applyEvent($event);
+            $this->applyEvent($event->getEvent());
         }
     }
 

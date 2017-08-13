@@ -59,6 +59,7 @@ abstract class EventStore
                 'metaData' => json_encode($this->getMetaData())
             ];
             $this->storageEngine->storeSerializedEvent($eventRecord);
+            $this->messageBus->dispatch($domainEvent);
         }
     }
 
@@ -68,7 +69,7 @@ abstract class EventStore
         $rawStream = $this->storageEngine->getSerialisedStream($streamId);
         foreach ($rawStream as $serialisedEventRecord) {
             $domainEventClass = $this->eventNameMapper->getClassForName($serialisedEventRecord['eventName']);
-            $domainEvent = $domainEventClass::fromArray(json_decode($serialisedEventRecord['eventData']));
+            $domainEvent = $domainEventClass::fromArray(json_decode($serialisedEventRecord['eventData']), true);
             $streamEvent = new StreamEvent($serialisedEventRecord['streamId'], $serialisedEventRecord['streamSeq'], $domainEvent);
             $eventStream->addEvent($streamEvent);
         }

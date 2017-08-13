@@ -18,7 +18,7 @@ abstract class AbstractDomainEvent implements DomainEvent
         $this->timestamp = microtime(true);
     }
 
-    public function getEventId(): EventId
+    public function getEventId(): Id
     {
         return $this->eventId;
     }
@@ -36,11 +36,9 @@ abstract class AbstractDomainEvent implements DomainEvent
         ];
     }
 
-    public static function fromArray(array $data)
+    protected function updateFromArray(array $data)
     {
-        $instance = new static();
-        $instance->eventId = Id::fromString($data['eventId']);
-        $instance->timestamp = (float) $data['timestamp'];
-        return $instance;
+        $this->eventId = Id::fromString($data['eventId']);
+        $this->timestamp = (float) $data['timestamp'];
     }
 }
