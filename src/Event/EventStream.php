@@ -59,7 +59,7 @@ class EventStream implements Countable, Iterator
         return $this->eventList[$this->arrayPointer];
     }
 
-    public function key(): \scalar
+    public function key()
     {
         return $this->arrayPointer;
     }
