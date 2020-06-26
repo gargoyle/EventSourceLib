@@ -9,10 +9,11 @@ use Pmc\ObjectLib\ClassNameMap;
 use Pmc\ObjectLib\Id;
 
 /**
- * EventStore does two things:-
+ * EventStore does three things:-
  * 
  *      1.) Store a stream of events
  *      2.) Fetch a stream of events
+ *      3.) Purge a stream of events
  * 
  * @author Gargoyle <g@rgoyle.com>
  */
@@ -74,6 +75,11 @@ abstract class EventStore
             $eventStream->addEvent($streamEvent);
         }
         return $eventStream;
+    }
+    
+    public function purgeStream(Id $streamId): void
+    {
+        $this->storageEngine->purgeStream((string)$streamId);
     }
 
 }

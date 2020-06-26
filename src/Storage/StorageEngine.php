@@ -11,4 +11,5 @@ interface StorageEngine
 {
     public function storeSerializedEvent(array $data): void;
     public function getSerialisedStream(string $streamId): array;
+    public function purgeStream(string $streamId): array;
 }
